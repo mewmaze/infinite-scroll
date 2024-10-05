@@ -15,8 +15,4 @@
 5. 3, 4번 조건 외의 라이브러리는 자유롭게 사용하셔도 됩니다
 
 ## 과제 영상
-<p align="center">
-  <img src="">
-</p>
-
-
+![infinite-scroll](https://github.com/user-attachments/assets/da82a821-a137-4b72-a5db-6a81cac2d995)
