@@ -1,9 +1,4 @@
-interface MockData {
-    productId: string;
-    productName: string;
-    price: number;
-    boughtDate: string;
-  }
+
 
   const MOCK_DATA: MockData[] = [
     {
@@ -716,10 +711,22 @@ interface MockData {
     },
   ];
 
+  interface MockData {
+    productId: string;
+    productName: string;
+    price: number;
+    boughtDate: string;
+  }
+
+  interface FetchResult {
+    datas: MockData[];
+    isEnd: boolean;
+  }
+  
   const PER_PAGE = 10;
 
   // 페이지는 1부터 시작함
-  export const getMockData = (pageNum: number) => {
+  export const getMockData = (pageNum: number): Promise<FetchResult> => {
     return new Promise((resolve) => {
       setTimeout(() => {
         const datas: MockData[] = MOCK_DATA.slice(
